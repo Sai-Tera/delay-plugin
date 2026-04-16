@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="UmF13p" name="DelayPlugin" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1">
   <MAINGROUP id="WbZFgf" name="DelayPlugin">
     <GROUP id="{79CD23D5-7884-6AED-3186-992933876158}" name="Source">
       <FILE id="JlHq9s" name="PluginProcessor.cpp" compile="1" resource="0"
@@ -30,7 +30,7 @@
   </MODULES>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX">
+    <XCODE_MAC targetFolder="Builds/MacOSX" microphonePermissionNeeded="1">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="DelayPlugin"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="DelayPlugin"/>

@@ -52,8 +52,18 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
+    
+    int msToSamples(int ms) const;
+    
+    int systemLatency = 0;
+    int addLatency = 0;
 
 private:
+    juce::AudioBuffer<float> delayBuffer;
+    int writePos = 0;
+    int finalLatency = 0;
+    
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayPluginAudioProcessor)
 };

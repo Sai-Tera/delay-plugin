@@ -28,6 +28,9 @@ private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     DelayPluginAudioProcessor& audioProcessor;
+    
+    juce::TextEditor systemLatencyTextBox, peerNumTextBox;
+    juce::TextButton systemLatencyButton, clearButton, lat10Button, lat15Button, lat20Button, lat25Button, lat30Button;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayPluginAudioProcessorEditor)
 };
