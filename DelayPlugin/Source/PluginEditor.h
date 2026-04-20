@@ -29,8 +29,10 @@ private:
     // access the processor object that created it.
     DelayPluginAudioProcessor& audioProcessor;
     
-    juce::TextEditor systemLatencyTextBox, peerNumTextBox;
+    juce::TextEditor systemLatencyTextBox;
     juce::TextButton systemLatencyButton, clearButton, lat10Button, lat15Button, lat20Button, lat25Button, lat30Button;
+    juce::GroupComponent systemDelayGroup;
+    juce::Label systemDelayValue, latencyValue;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayPluginAudioProcessorEditor)
 };
